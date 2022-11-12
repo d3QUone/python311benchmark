@@ -1,0 +1,300 @@
+Running all benchmarks
+Control: Django 4.2.dev20221111083513 (in .)
+Experiment: Django 4.2.dev20221111083513 (in .)
+
+Running 'url_resolve_flat' benchmark ...
+Min: 0.059872 -> 0.050532: 1.1849x faster
+Avg: 0.063427 -> 0.053158: 1.1932x faster
+Significant (t=7.095994)
+Stddev: 0.00597 -> 0.00831: 1.3907x larger (N = 50)
+
+Running 'query_delete' benchmark ...
+Min: 0.000155 -> 0.000071: 2.1880x faster
+Avg: 0.000179 -> 0.000116: 1.5411x faster
+Significant (t=7.460713)
+Stddev: 0.00004 -> 0.00005: 1.2363x larger (N = 50)
+
+Running 'query_annotate' benchmark ...
+Min: 0.000306 -> 0.000295: 1.0363x faster
+Avg: 0.000412 -> 0.000371: 1.1118x faster
+Not significant
+Stddev: 0.00015 -> 0.00014: 1.0677x smaller (N = 50)
+
+Running 'query_update' benchmark ...
+Min: 0.000140 -> 0.000033: 4.2563x faster
+Avg: 0.000158 -> 0.000037: 4.2677x faster
+Significant (t=17.536628)
+Stddev: 0.00005 -> 0.00001: 4.8775x smaller (N = 50)
+
+Running 'model_creation' benchmark ...
+Min: 0.000066 -> 0.000057: 1.1400x faster
+Avg: 0.000207 -> 0.000168: 1.2283x faster
+Not significant
+Stddev: 0.00082 -> 0.00054: 1.5214x smaller (N = 50)
+
+Running 'query_values_10000' benchmark ...
+Min: 0.008515 -> 0.008283: 1.0281x faster
+Avg: 0.008660 -> 0.008739: 1.0091x slower
+Not significant
+Stddev: 0.00082 -> 0.00111: 1.3554x larger (N = 50)
+
+Running 'query_exclude' benchmark ...
+Min: 0.000383 -> 0.000240: 1.5954x faster
+Avg: 0.000504 -> 0.000428: 1.1764x faster
+Significant (t=2.278300)
+Stddev: 0.00019 -> 0.00014: 1.3187x smaller (N = 50)
+
+Running 'query_get_or_create' benchmark ...
+Min: 0.000614 -> 0.000525: 1.1693x faster
+Avg: 0.001460 -> 0.001554: 1.0649x slower
+Not significant
+Stddev: 0.00190 -> 0.00444: 2.3357x larger (N = 50)
+
+Running 'query_dates' benchmark ...
+Min: 0.000459 -> 0.000313: 1.4653x faster
+Avg: 0.000870 -> 0.000530: 1.6432x faster
+Significant (t=2.784901)
+Stddev: 0.00081 -> 0.00031: 2.6119x smaller (N = 50)
+
+Running 'qs_filter_chaining' benchmark ...
+Min: 0.000419 -> 0.000344: 1.2191x faster
+Avg: 0.000710 -> 0.000673: 1.0546x faster
+Not significant
+Stddev: 0.00039 -> 0.00064: 1.6626x larger (N = 50)
+
+Running 'raw_sql' benchmark ...
+Min: 0.000018 -> 0.000053: 2.9179x slower
+Avg: 0.000022 -> 0.000061: 2.7545x slower
+Significant (t=-11.247404)
+Stddev: 0.00001 -> 0.00002: 2.0918x larger (N = 50)
+
+Running 'model_delete' benchmark ...
+Min: 0.000113 -> 0.000225: 1.9895x slower
+Avg: 0.000296 -> 0.000329: 1.1104x slower
+Not significant
+Stddev: 0.00014 -> 0.00019: 1.3325x larger (N = 50)
+
+Running 'query_get' benchmark ...
+Min: 0.000468 -> 0.000452: 1.0357x faster
+Avg: 0.000712 -> 0.000709: 1.0038x faster
+Not significant
+Stddev: 0.00039 -> 0.00021: 1.8366x smaller (N = 50)
+
+Running 'form_clean' benchmark ...
+Min: 0.000018 -> 0.000013: 1.4073x faster
+Avg: 0.000023 -> 0.000016: 1.3744x faster
+Not significant
+Stddev: 0.00003 -> 0.00001: 1.8906x smaller (N = 50)
+
+Running 'query_all' benchmark ...
+Min: 0.008581 -> 0.007319: 1.1724x faster
+Avg: 0.009629 -> 0.008004: 1.2030x faster
+Significant (t=4.052066)
+Stddev: 0.00224 -> 0.00174: 1.2921x smaller (N = 50)
+
+Running 'query_in_bulk' benchmark ...
+Min: 0.000153 -> 0.000302: 1.9738x slower
+Avg: 0.000361 -> 0.000456: 1.2651x slower
+Significant (t=-2.137738)
+Stddev: 0.00027 -> 0.00016: 1.6959x smaller (N = 50)
+
+Running 'query_distinct' benchmark ...
+Min: 0.000298 -> 0.000252: 1.1823x faster
+Avg: 0.000365 -> 0.000321: 1.1376x faster
+Significant (t=2.046287)
+Stddev: 0.00009 -> 0.00012: 1.4016x larger (N = 50)
+
+Running 'query_complex_filter' benchmark ...
+Min: 0.000029 -> 0.000092: 3.1215x slower
+Avg: 0.000087 -> 0.000104: 1.2029x slower
+Not significant
+Stddev: 0.00017 -> 0.00003: 5.4572x smaller (N = 50)
+
+Running 'model_save_new' benchmark ...
+Min: 0.002865 -> 0.002491: 1.1501x faster
+Avg: 0.004036 -> 0.003643: 1.1080x faster
+Not significant
+Stddev: 0.00314 -> 0.00352: 1.1233x larger (N = 50)
+
+Running 'query_prefetch_related' benchmark ...
+Min: 0.012261 -> 0.010338: 1.1860x faster
+Avg: 0.014915 -> 0.012285: 1.2141x faster
+Significant (t=4.230775)
+Stddev: 0.00297 -> 0.00324: 1.0878x larger (N = 50)
+
+Running 'query_count' benchmark ...
+Min: 0.000189 -> 0.000067: 2.8336x faster
+Avg: 0.000295 -> 0.000080: 3.6758x faster
+Significant (t=6.699376)
+Stddev: 0.00022 -> 0.00004: 6.2755x smaller (N = 50)
+
+Running 'query_values' benchmark ...
+Min: 0.000160 -> 0.000137: 1.1666x faster
+Avg: 0.000177 -> 0.000294: 1.6635x slower
+Significant (t=-3.246089)
+Stddev: 0.00003 -> 0.00025: 8.1379x larger (N = 50)
+
+Running 'query_delete_related' benchmark ...
+Min: 0.000196 -> 0.000085: 2.2952x faster
+Avg: 0.000423 -> 0.000110: 3.8393x faster
+Significant (t=4.857688)
+Stddev: 0.00044 -> 0.00011: 4.0557x smaller (N = 50)
+
+Running 'query_latest' benchmark ...
+Min: 0.000152 -> 0.000111: 1.3679x faster
+Avg: 0.000453 -> 0.000299: 1.5172x faster
+Significant (t=5.002623)
+Stddev: 0.00016 -> 0.00014: 1.1490x smaller (N = 50)
+
+Running 'multi_value_dict' benchmark ...
+Min: -0.000247 -> 0.000033: -0.1347x slower
+Avg: 0.000079 -> 0.000078: 1.0115x faster
+Not significant
+Stddev: 0.00005 -> 0.00005: 1.1530x smaller (N = 50)
+
+Running 'query_none' benchmark ...
+Min: 0.000158 -> 0.000127: 1.2408x faster
+Avg: 0.000293 -> 0.000264: 1.1084x faster
+Not significant
+Stddev: 0.00091 -> 0.00083: 1.0962x smaller (N = 50)
+
+Running 'query_raw_deferred' benchmark ...
+Min: 0.003998 -> 0.003396: 1.1772x faster
+Avg: 0.004310 -> 0.003542: 1.2167x faster
+Significant (t=3.859623)
+Stddev: 0.00112 -> 0.00085: 1.3268x smaller (N = 50)
+
+Running 'form_create' benchmark ...
+Min: 0.000057 -> 0.000048: 1.1692x faster
+Avg: 0.000181 -> 0.000201: 1.1098x slower
+Not significant
+Stddev: 0.00084 -> 0.00102: 1.2081x larger (N = 50)
+
+Running 'model_save_existing' benchmark ...
+Min: 0.003034 -> 0.002633: 1.1523x faster
+Avg: 0.003982 -> 0.003603: 1.1053x faster
+Not significant
+Stddev: 0.00205 -> 0.00233: 1.1359x larger (N = 50)
+
+Running 'template_compilation' benchmark ...
+Min: 0.000177 -> 0.000350: 1.9769x slower
+Avg: 0.001205 -> 0.000840: 1.4355x faster
+Not significant
+Stddev: 0.00544 -> 0.00262: 2.0769x smaller (N = 50)
+
+Running 'query_exists' benchmark ...
+Min: 0.000537 -> 0.000209: 2.5655x faster
+Avg: 0.000762 -> 0.000473: 1.6107x faster
+Significant (t=6.128546)
+Stddev: 0.00021 -> 0.00026: 1.2323x larger (N = 50)
+
+Running 'query_select_related' benchmark ...
+Min: 0.016049 -> 0.013199: 1.2159x faster
+Avg: 0.016747 -> 0.013549: 1.2360x faster
+Significant (t=10.537577)
+Stddev: 0.00182 -> 0.00113: 1.6126x smaller (N = 50)
+
+Running 'default_middleware' benchmark ...
+Min: -0.000024 -> -0.000144: 0.1688x faster
+Avg: 0.000168 -> 0.000175: 1.0382x slower
+Not significant
+Stddev: 0.00118 -> 0.00126: 1.0653x larger (N = 50)
+
+Running 'query_values_list' benchmark ...
+Min: 0.000246 -> 0.000203: 1.2131x faster
+Avg: 0.000270 -> 0.000221: 1.2254x faster
+Significant (t=4.171978)
+Stddev: 0.00007 -> 0.00005: 1.3405x smaller (N = 50)
+
+Running 'url_resolve_flat_i18n_off' benchmark ...
+Min: 0.059524 -> 0.046879: 1.2698x faster
+Avg: 0.060771 -> 0.048414: 1.2552x faster
+Significant (t=7.643765)
+Stddev: 0.00843 -> 0.00772: 1.0925x smaller (N = 50)
+
+Running 'template_render' benchmark ...
+Min: 0.000958 -> 0.000768: 1.2473x faster
+Avg: 0.004065 -> 0.003440: 1.1816x faster
+Not significant
+Stddev: 0.01724 -> 0.01621: 1.0636x smaller (N = 50)
+
+Running 'url_resolve' benchmark ...
+Min: 0.005100 -> 0.004293: 1.1879x faster
+Avg: 0.005607 -> 0.005961: 1.0632x slower
+Not significant
+Stddev: 0.00171 -> 0.00759: 4.4402x larger (N = 50)
+
+Running 'query_order_by' benchmark ...
+Min: 0.000168 -> 0.000203: 1.2102x slower
+Avg: 0.000332 -> 0.000278: 1.1945x faster
+Not significant
+Stddev: 0.00019 -> 0.00011: 1.7623x smaller (N = 50)
+
+Running 'query_raw' benchmark ...
+Min: 0.006568 -> 0.005695: 1.1533x faster
+Avg: 0.006994 -> 0.005922: 1.1810x faster
+Significant (t=4.479676)
+Stddev: 0.00134 -> 0.00103: 1.3075x smaller (N = 50)
+
+Running 'l10n_render' benchmark ...
+Min: 0.001447 -> 0.001138: 1.2721x faster
+Avg: 0.004062 -> 0.004215: 1.0376x slower
+Not significant
+Stddev: 0.01231 -> 0.01618: 1.3147x larger (N = 50)
+
+Running 'url_resolve_nested' benchmark ...
+Min: 0.000096 -> 0.000073: 1.3104x faster
+Avg: 0.001058 -> 0.000699: 1.5135x faster
+Not significant
+Stddev: 0.00672 -> 0.00429: 1.5664x smaller (N = 50)
+
+Running 'query_all_converters' benchmark ...
+Min: 0.000681 -> 0.000552: 1.2336x faster
+Avg: 0.000880 -> 0.000666: 1.3208x faster
+Significant (t=6.200942)
+Stddev: 0.00021 -> 0.00013: 1.6685x smaller (N = 50)
+
+Running 'query_aggregate' benchmark ...
+Min: 0.000184 -> 0.000234: 1.2693x slower
+Avg: 0.000220 -> 0.000348: 1.5818x slower
+Significant (t=-4.269687)
+Stddev: 0.00008 -> 0.00019: 2.3217x larger (N = 50)
+
+Running 'url_reverse' benchmark ...
+Min: 0.000166 -> 0.000082: 2.0255x faster
+Avg: 0.000342 -> 0.000167: 2.0484x faster
+Not significant
+Stddev: 0.00104 -> 0.00054: 1.9358x smaller (N = 50)
+
+Running 'locale_from_request' benchmark ...
+Min: 0.000219 -> 0.000180: 1.2211x faster
+Avg: 0.000336 -> 0.000249: 1.3526x faster
+Not significant
+Stddev: 0.00063 -> 0.00039: 1.6455x smaller (N = 50)
+
+Running 'startup' benchmark ...
+Skipped: Django 1.9 and later has changed app loading. This benchmark needs fixing anyway.
+
+Running 'query_filter' benchmark ...
+Min: 0.000225 -> 0.000212: 1.0600x faster
+Avg: 0.000283 -> 0.000246: 1.1494x faster
+Significant (t=3.683648)
+Stddev: 0.00005 -> 0.00005: 1.0634x smaller (N = 50)
+
+Running 'query_iterator' benchmark ...
+Min: 0.000137 -> 0.000160: 1.1713x slower
+Avg: 0.000149 -> 0.000193: 1.2973x slower
+Significant (t=-6.546703)
+Stddev: 0.00002 -> 0.00004: 2.4490x larger (N = 50)
+
+Running 'template_render_simple' benchmark ...
+Min: 0.000077 -> 0.000048: 1.6038x faster
+Avg: 0.000557 -> 0.000512: 1.0885x faster
+Not significant
+Stddev: 0.00330 -> 0.00301: 1.0963x smaller (N = 50)
+
+Running 'query_all_multifield' benchmark ...
+Min: 0.018898 -> 0.015553: 1.2151x faster
+Avg: 0.020077 -> 0.016311: 1.2309x faster
+Significant (t=9.316008)
+Stddev: 0.00216 -> 0.00187: 1.1553x smaller (N = 50)
